@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".SignupPage">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Account"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Rounded White Background -->
+    <LinearLayout
+        android:id="@+id/white_card"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/rounded_background"
+        android:orientation="vertical"
+        android:padding="24dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Full Name Input -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full name"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:fontFamily="@font/league_spartan"
+            android:layout_marginBottom="5dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background"
+            android:hint="example@example.com"
+            android:padding="12dp"
+            android:fontFamily="@font/league_spartan"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Password Input -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:fontFamily="@font/league_spartan"
+            android:layout_marginBottom="5dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background"
+            android:hint="***********"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp"
+            android:drawableEnd="@drawable/baseline_visibility_off_24"
+            />
+
+        <!-- Email Input -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:fontFamily="@font/league_spartan"
+            android:layout_marginBottom="5dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background"
+            android:hint="example@example.com"
+            android:fontFamily="@font/league_spartan"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Mobile Number Input -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile Number"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:fontFamily="@font/league_spartan"
+            android:layout_marginBottom="5dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background"
+            android:hint="+123 456 789"
+            android:padding="12dp"
+            android:fontFamily="@font/league_spartan"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Date of Birth Input -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date of birth"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:fontFamily="@font/league_spartan"
+            android:layout_marginBottom="5dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background"
+            android:hint="DD / MM / YYYY"
+            android:fontFamily="@font/league_spartan"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Terms and Policy -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By continuing, you agree to"
+            android:textSize="12sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="2dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terms of Use and Privacy Policy."
+            android:textSize="12sp"
+            android:textColor="#E95322"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="2dp"/>
+
+        <!-- Sign Up Button -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#E95322"
+            android:text="Sign Up"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_marginRight="70sp"
+            android:layout_marginLeft="70sp"
+            android:textStyle="bold" />
+
+        <!-- Or Sign Up With -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="or sign up with"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"/>
+
+        <!-- Social Media Icons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+      >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:src="@drawable/gugelicon"
+                android:contentDescription="Google Icon"
+                android:layout_marginEnd="8dp"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:src="@drawable/facebookicon"
+                android:contentDescription="Facebook Icon"
+                android:layout_marginEnd="8dp"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:src="@drawable/fingericon"
+                android:contentDescription="Fingerprint Icon"/>
+        </LinearLayout>
+
+
+        <!-- Already have an account -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/daftaro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account?"
+                android:textSize="14sp"
+                android:layout_marginEnd="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log in"
+                android:textSize="14sp"
+                android:textColor="@color/orange"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
